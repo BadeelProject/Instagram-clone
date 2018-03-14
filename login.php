@@ -11,7 +11,7 @@
 
 <?php
   if ($universal->isLoggedIn()) {
-    header('Location: '.DIR);
+    header('Location: /'.trim(DIR,'/'));
   }
 ?>
 
