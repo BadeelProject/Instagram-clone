@@ -16,7 +16,7 @@
 
 <?php
   if ($universal->isLoggedIn() == false) {
-    header('Location:'. DIR .'/welcome');
+    header('Location: /'.trim(DIR,'/').'/welcome');
   }
   $session = $_SESSION['id'];
 ?>
